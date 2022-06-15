@@ -33,7 +33,7 @@ header {
     align-content: center;
     width: 100%;
     height: 93px;
-    background: rgba(0, 0, 0, 0.5)
+    background: rgba(0, 0, 0, 0.7)
 }
 header img {
     width: 31px;
@@ -48,14 +48,17 @@ header img {
     font-size: 35px;
     text-transform: uppercase;
     font-weight: bolder;
+
 }
 
 .PageTitle:first-of-type {
     color: #FF0000;
+    margin: 2px 10px 0 10px;
 }
 
 .PageTitle:last-of-type {
     color: white;
+    margin-top: 2px;
 }
 
 .menu {
@@ -94,7 +97,7 @@ header img {
     position: center;
     width: 100%;
     height: 715px;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.45);
 }
 
 .main_header {
@@ -118,7 +121,7 @@ header img {
     margin-right: 160px;
     height: 60px;
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 30px;
     font-weight: bold;
     color: #FFFFFF;
@@ -193,6 +196,7 @@ header img {
     text-transform: uppercase;
     margin-top: 65px;
     margin-bottom: 35px;
+    font-weight: bold;
 }
 
 .blog_title span {
@@ -218,6 +222,10 @@ header img {
     color: #6A6A6A;
 }
 
+.blog_articles article {
+    text-align: center;
+}
+
 .blog_articles h3 {
     font-weight: bold;
     margin-top: 20px;
@@ -231,8 +239,7 @@ header img {
     margin-left: 20px;
     margin-right: 20px;
     max-width: 352px;
-    margin-bottom: 15px;
-
+    margin-bottom: 25px;
     text-align: center;
 }
 
@@ -254,7 +261,7 @@ header img {
     font-weight: bold;
     font-size: 14px;
     background: #FF0000;
-    padding: 5px 28px;
+    padding: 10px 28px;
     border-radius: 40px;
     box-shadow: 0 3px 6px #FF00004D;
     margin: 100px;
@@ -297,6 +304,7 @@ header img {
 .service_title h2 {
     margin-top: 65px;
     margin-bottom: 75px;
+    font-weight: bold;
 }
 
 .service_title span:first-of-type {
@@ -305,7 +313,6 @@ header img {
 .service_title span:last-of-type {
     margin-left: 15px;
 }
-
 
 .service_articles {
     display: flex;
@@ -317,13 +324,12 @@ header img {
     width: 231px;
 }
 
-
 .service_articles img {
-    width: 190px;
-    height: 190px;
+    width: 170px;
+    height: 170px;
     display: flex;
     justify-items: center;
-    margin: 0 15px 15px 15px;
+    margin: 0 15px 15px 30px;
 }
 
 
@@ -336,8 +342,7 @@ header img {
     border-radius: 40px;
     box-shadow: 0 3px 6px #FF00004D;
     text-align: center;
-    margin-left: 45px;
-    margin-right: 45px;
+    margin-left: 50px;
     width: 142px;
 }
 
@@ -352,6 +357,7 @@ header img {
     text-align: center;
     font-size: 14px;
     color: #B2B2B2;
+    padding:0 10px 0 10px;
 }
 
 .service_articles h3 {
@@ -379,17 +385,19 @@ header img {
     text-transform: uppercase;
     margin-top: 65px;
     margin-bottom: 75px;
+    font-weight: bold;
 }
 
 .contact_content {
     display: flex;
     justify-content: center;
     align-content: center;
+    margin-bottom: 65px;
 }
 
 .contact_content img {
-    width: 444px;
-    height: 317px;
+    width: 450px;
+    height: 327px;
     margin-right: 16px;
     box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
 }
@@ -415,6 +423,15 @@ header img {
 form {
     width: 444px;
 }
+
+.contact_form div {
+    margin-bottom: 13px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: center;
+    font-family: "Nunito Sans", sans-serif;
+}
+
 input {
     width: 444px;
     border: 1px solid #D1D1D1;
@@ -430,7 +447,7 @@ input:focus {
    border: 2px solid #FF0000;
 }
 
-textarea {
+.contact_form textarea {
     width: 444px;
     height: 140px;
     border: 1px solid #D1D1D1;
@@ -476,6 +493,8 @@ textarea:focus {
 .checkbox input:checked + span {
     background: url("../images/Icon Check.svg") no-repeat center;
     background-size: 13px;
+    border: 1px solid #FF0000;
+    transition: 0.2s;
 }
 
 .form_button {
@@ -483,7 +502,8 @@ textarea:focus {
     background: none;
     border: 1px solid #FF0000;
     border-radius: 40px;
-    color: #FF0000;
+    color: #FFFFFF;
+    background: #FF0000;
     box-shadow: 0 3px 6px #FF00004D;
     font-size: 14px;
     font-family: "Nunito Sans", serif;
@@ -493,9 +513,11 @@ textarea:focus {
 }
 
 .form_button:hover {
-    background: #FF0000;
+    background: #000000;
     transition: 0.5s;
     color: #FFFFFF;
+    border: 1px solid #000000;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
 }
 
 /* --FOOTER-- */
@@ -505,6 +527,22 @@ footer {
     color: #FFFFFF;
     margin-top: 65px;
     width: 100vw;
+    height: 232px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.footer_main {
+    width: 1088px;
+    display: contents;
+}
+
+.title_main {
+    margin-top: 48px;
+    margin-left: 40px;
+    display: flex;
+    width: 1088px;
 }
 
 footer p {
@@ -514,9 +552,9 @@ footer p {
 
 .footer_menu  {
     display: flex;
-    margin-left: 139px;
-    width: 1088px;
-
+    justify-content: center;
+    align-content: center;
+    margin-top: 22px;
 }
 
 .footer_menu ul {
@@ -524,9 +562,28 @@ footer p {
     font-size: 14px;
 }
 
+.footer_menu li:hover {
+    color: #FF0000;
+    cursor: pointer;
+}
+
+.footer_menu ul:last-of-type {
+    margin-left: 141px;
+}
+
+.footer_title {
+    display: flex;
+    justify-content: center;
+    margin-left: -140px;
+}
+
 .footerspan {
     font-size: 25px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 8px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .footerspan:first-of-type {
@@ -536,5 +593,6 @@ footer p {
 .footer_menu p {
     display: flex;
     align-self: flex-end;
+    line-height: 20px;
     margin-left: 740px;
 }
