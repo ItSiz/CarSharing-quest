@@ -1,4 +1,4 @@
-hello thanks for viewing!
+Hello thanks for viewing!
 
 This is my first one-page website written by me from scratch.
 
